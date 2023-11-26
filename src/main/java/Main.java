@@ -8,6 +8,8 @@ public class Main {
 
         pat2.getInfo();
         pat2.getInfo();
+        pat2.getInfo();
+        pat2.getInfo();
 
 
 
