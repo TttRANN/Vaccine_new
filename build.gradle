@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'application' // Add this line
+}
+application { // Add this section – it identifies which class contains the entry point to the program which is always a method called main
+    mainClass='Main'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+sourceCompatibility = 1.8 // Add this line – it sets Java version 8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
